@@ -1,3 +1,14 @@
+.product-image{
+    margin-left: 20px;
+    float: left;
+    position: relative;
+}
+
+.product-info{
+    margin-left: 20px;
+    float: left;
+}
+
 .color-box{
     width: 40px;
     height: 40px;
