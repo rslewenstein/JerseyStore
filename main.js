@@ -32,9 +32,6 @@ Vue.component('product',{
                 :disabled="!inStock"
                 :class="{disabledButton: !inStock }">Add to Cart</button>
 
-        <div class="cart">
-            <p>Cart({{ cart }})</p>
-        </div>
     </div>
 </div>`,
 data() { 
@@ -56,13 +53,12 @@ data() {
                 variantImage: './assets/shirt-white.jpeg',
                 variantQuantity: 0
             }
-        ],
-        cart:0
+        ]
     }
 },
 methods:{
     addToCart: function(){
-        this.cart += 1
+        this.$emit('add-to-cart')
     },
     updateProduct: function(index){
         this.selectedVariant = index
@@ -90,6 +86,12 @@ computed: {
 var app = new Vue({
     el: '#app',
     data:{
-        premium: true
+        premium: true,
+        cart: 0
+    },
+    methods: {
+        updateCart(){
+            this.cart += 1
+        }
     }
 })
