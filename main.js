@@ -34,7 +34,7 @@ Vue.component('product',{
 
     </div>
 
-    <div>
+    <div class="reviews">
         <p v-if="!reviews.length">There are no reviews yet.</p>
         <ul>
             <li v-for="review in reviews">
@@ -169,23 +169,6 @@ Vue.component('product-review', {
         }
     }
 })
-
-// Vue.component('product-tabs', {
-//     template:
-//     `
-//         <div>
-//             <span class="tab"
-//                 v-for="(tab, index) in tabs" :key="index">
-//                 {{ tab }}
-//             </span>
-//         </div>
-//     `,
-//     data(){
-//         return{
-//             tabs: ['Reviews', 'Make a Review']
-//         }
-//     }
-// })
 
 var app = new Vue({
     el: '#app',
