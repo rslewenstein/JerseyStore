@@ -1,13 +1,24 @@
-.product-image{
+body{
+    width: 80%;
+}
+
+/* .product{
+    left: 30%;
+    position: absolute;
+    transform: translateX(-50%);
+    height: 100%;
+} */
+
+/* .product-image{
     margin-left: 20px;
     float: left;
     position: relative;
-}
+} */
 
-.product-info{
+/* .product-info{
     margin-left: 20px;
     float: left;
-}
+} */
 
 .color-box{
     width: 40px;
@@ -22,6 +33,10 @@
     float: right;
     border: 1px solid #d8d8d8;
     padding: 5px 20px;
+}
+
+.review-form{
+    border: solid 1px red;
 }
 
 button{
